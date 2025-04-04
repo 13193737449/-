@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>花哪儿了记账应用</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+    }
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid rgba(255, 255, 255, 0.1);
+      border-top: 4px solid #00e5ff;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+    .message {
+      font-size: 18px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="spinner"></div>
+  <div class="message">正在跳转到登录页面...</div>
+  
+  <script>
+    // 页面加载完成后自动跳转
+    window.onload = function() {
+      setTimeout(function() {
+        // 这里使用相对路径，确保在任何部署环境下都能正确跳转
+        window.location.href = '/pages/login/login';
+      }, 1500); // 延迟1.5秒再跳转，显示加载动画
+    };
+  </script>
+</body>
+</html> 

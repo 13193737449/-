@@ -1,0 +1,51 @@
+/* 颜色变量定义 */
+$background-color: #121212;
+$card-color: #1e1e1e;
+$text-dark: #ffffff;
+$text-light: #f0f0f0;
+$text-muted: #9e9e9e;
+
+/* 主题色 */
+$primary-color: #00e5ff;
+$secondary-color: #ff00ff;
+$accent1-color: #ffff00;
+$accent2-color: #00ff00;
+
+/* 渐变 */
+$gradient-primary: linear-gradient(45deg, $primary-color, $secondary-color, $accent1-color);
+$gradient-secondary: linear-gradient(135deg, $accent2-color, $primary-color, $secondary-color);
+
+/* 阴影 */
+$shadow-small: 0 2px 8px rgba(0, 0, 0, 0.2);
+$shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.3);
+$shadow-large: 0 6px 24px rgba(0, 0, 0, 0.4);
+
+/* 圆角 */
+$radius-small: 8rpx;
+$radius-medium: 16rpx;
+$radius-large: 24rpx;
+$radius-circle: 50%;
+
+/* 霓虹灯发光效果 */
+$glow-primary: 0 0 10rpx rgba($primary-color, 0.5), 0 0 20rpx rgba($primary-color, 0.3);
+$glow-secondary: 0 0 10rpx rgba($secondary-color, 0.5), 0 0 20rpx rgba($secondary-color, 0.3);
+$glow-inner-primary: inset 0 0 10rpx rgba($primary-color, 0.5);
+
+/* 间距 */
+$spacing-xs: 10rpx;
+$spacing-sm: 20rpx;
+$spacing-md: 30rpx;
+$spacing-lg: 40rpx;
+$spacing-xl: 60rpx;
+
+/* 层级 */
+$z-index-base: 1;
+$z-index-raised: 10;
+$z-index-dropdown: 100;
+$z-index-modal: 1000;
+$z-index-toast: 2000;
+
+// 输入框背景色
+$input-bg: rgba(255, 255, 255, 0.08);
+// 边框颜色
+$border-color: rgba(255, 255, 255, 0.1); 
